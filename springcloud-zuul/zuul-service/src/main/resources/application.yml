@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: zuul-service
+eureka:
+  client:
+    service-url:
+     defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id:  ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+server:
+  port: 6069
+zuul:
+  routes:
+    user-service:
+      path: /users/**
+      serviceId: user-service
+    pay-service:
+      path: /pays/**
+      serviceId: pay-service
+
+
