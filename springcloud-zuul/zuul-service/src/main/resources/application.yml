@@ -7,15 +7,27 @@ eureka:
      defaultZone: http://localhost:8761/eureka
   instance:
     instance-id:  ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    prefer-ip-address: true
 server:
   port: 6069
+
 zuul:
   routes:
     user-service:
       path: /users/**
       serviceId: user-service
-    pay-service:
-      path: /pays/**
-      serviceId: pay-service
+#    pay-service:
+#      path: /pays/**
+#      serviceId: pay-service
+#    zuul-service:
+#      path: /api-b/**
+#      serviceId: forward:/local
+#  add-host-header: true
+
+
+
+
+
+
 
 

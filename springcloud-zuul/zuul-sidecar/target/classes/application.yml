@@ -1,0 +1,15 @@
+server:
+  port: 8070
+spring:
+  application:
+    name: zuul-sidecar
+eureka:
+  client:
+    service-url:
+     defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id:  ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    prefer-ip-address: true
+sidecar:
+  port: 8060                                      # Node.js微服务的端口
+  health-uri: http://localhost:8060/health.json   # Node.js微服务的健康检查URL

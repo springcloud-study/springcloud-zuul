@@ -1,12 +1,17 @@
 spring:
   application:
     name: user-service
+  http:
+    multipart:
+      max-file-size: 2000Mb # Max file size，默认1M
+      max-request-size: 2500Mb # Max request size，默认10M
 eureka:
   client:
     service-url:
      defaultZone: http://localhost:8761/eureka
   instance:
     instance-id:  ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    prefer-ip-address: true
 server:
   port: 8080
 

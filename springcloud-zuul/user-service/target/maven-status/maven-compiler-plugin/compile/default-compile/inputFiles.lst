@@ -1,2 +1,4 @@
-/Users/naeshihiroshi/work/workspace/selfStudy/springcloud-eureka/springcloud-eureka/user-service/src/main/java/com/zhihao/miao/user/controller/UserController.java
-/Users/naeshihiroshi/work/workspace/selfStudy/springcloud-eureka/springcloud-eureka/user-service/src/main/java/com/zhihao/miao/user/UserApplication.java
+/Users/naeshihiroshi/work/workspace/springcloud-study/springcloud-zuul/springcloud-zuul/user-service/src/main/java/com/zhihao/miao/user/bean/User.java
+/Users/naeshihiroshi/work/workspace/springcloud-study/springcloud-zuul/springcloud-zuul/user-service/src/main/java/com/zhihao/miao/user/controller/UserController2.java
+/Users/naeshihiroshi/work/workspace/springcloud-study/springcloud-zuul/springcloud-zuul/user-service/src/main/java/com/zhihao/miao/user/controller/UserController.java
+/Users/naeshihiroshi/work/workspace/springcloud-study/springcloud-zuul/springcloud-zuul/user-service/src/main/java/com/zhihao/miao/user/UserApplication.java

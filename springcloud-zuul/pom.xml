@@ -13,6 +13,8 @@
         <module>order-service</module>
         <module>pay-service</module>
         <module>zuul-service</module>
+        <module>api-gateway-service</module>
+        <module>zuul-sidecar</module>
     </modules>
     <packaging>pom</packaging>
 
