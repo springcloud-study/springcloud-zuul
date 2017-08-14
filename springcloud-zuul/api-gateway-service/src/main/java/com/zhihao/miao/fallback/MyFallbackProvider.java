@@ -16,7 +16,7 @@ import java.io.InputStream;
  * @Date :2017/8/12
  * @since 1.0
  */
-@Component
+//@Component
 public class MyFallbackProvider implements ZuulFallbackProvider {
 
     //getRoute返回的必须要和zuul.routes.***一致，才能针对某个服务降级

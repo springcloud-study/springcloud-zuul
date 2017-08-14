@@ -31,6 +31,11 @@ public class UserController {
         return "user home";
     }
 
+    public String index2(){
+        logger.info("user index2");
+        throw new NullPointerException("空指针异常");
+    }
+
     @GetMapping("/sidecar")
     public String sidecar(){
         String response = restTemplate.getForObject("http://zuul-sidecar/",String.class);

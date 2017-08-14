@@ -11,7 +11,6 @@ eureka:
 server:
   port: 6069
 
-
 hystrix:
   command:
     default:
@@ -26,6 +25,18 @@ ribbon:
 zuul:
   add-host-header: true
   defaultRoute: user-service
+#  SendErrorFilter:
+#    post:
+#      disable: true
+#  SendResponseFilter:
+#    post:
+#      disable: true
+
+logging:
+  level:
+    com.netflix: debug
+
+
 
 
 
